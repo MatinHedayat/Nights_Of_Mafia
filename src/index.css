@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-800 h-dvh select-none overflow-hidden;
+    /* background-color: rgb(255, 255, 255); */
+  }
+}
+
+@layer utilities {
+  /* ------ Shortcuts ------------------- */
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 1rem;
+}
